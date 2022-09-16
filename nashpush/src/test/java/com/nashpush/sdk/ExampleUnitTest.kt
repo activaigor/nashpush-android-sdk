@@ -1,4 +1,4 @@
-package com.nashpush.lib
+package com.nashpush.sdk
 
 import org.junit.Test
 

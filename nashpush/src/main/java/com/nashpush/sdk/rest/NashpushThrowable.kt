@@ -1,4 +1,4 @@
-package com.nashpush.lib
+package com.nashpush.sdk.rest
 
 import java.lang.RuntimeException
 

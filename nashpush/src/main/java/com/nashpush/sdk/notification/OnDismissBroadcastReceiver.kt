@@ -1,13 +1,13 @@
-package com.nashpush.lib
+package com.nashpush.sdk.notification
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
+import com.nashpush.sdk.Nashpush
 
 class OnDismissBroadcastReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        Nashpush.Loger(Nashpush.LOG_LVL.VERBOSE, "OnDismissBroadcastReceiver: onReceive")
+        Nashpush.loger(Nashpush.LOG_LVL.VERBOSE, "OnDismissBroadcastReceiver: onReceive")
         val subscriberId = intent.getStringExtra("subscriberId")
         val messageId = intent.getStringExtra("messageId")
         if (subscriberId != null && messageId != null) {

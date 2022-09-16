@@ -1,14 +1,15 @@
-package com.nashpush.lib
+package com.nashpush.sdk.notification
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
+import com.nashpush.sdk.Nashpush
 
 class OnClickBroadcastReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        Nashpush.Loger(Nashpush.LOG_LVL.VERBOSE, "OnClickBroadcastReceiver: onReceive")
+        Nashpush.loger(Nashpush.LOG_LVL.VERBOSE, "OnClickBroadcastReceiver: onReceive")
         val notificationIntent =
             Intent(Intent.ACTION_VIEW, Uri.parse(intent.getStringExtra("url")))
         notificationIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
