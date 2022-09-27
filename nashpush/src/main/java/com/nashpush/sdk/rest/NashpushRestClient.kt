@@ -17,7 +17,7 @@ import javax.net.ssl.HttpsURLConnection
 
 internal object NashpushRestClient {
     private const val API_VERSION = "v1"
-    private const val BASE_URL = "https://gateway.staging.almightypush.com/api/$API_VERSION/"
+    private const val BASE_URL = "https://gateway.production.almightypush.com/api/$API_VERSION/"
     private const val STATISTIC_URL =
         "https://callbacks-api.staging.almightypush.com/api/$API_VERSION/"
     private const val THREAD_ID = 10000
