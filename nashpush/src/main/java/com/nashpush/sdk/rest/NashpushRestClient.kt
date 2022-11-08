@@ -19,7 +19,7 @@ internal object NashpushRestClient {
     private const val API_VERSION = "v1"
     private const val BASE_URL = "https://gateway.production.almightypush.com/api/$API_VERSION/"
     private const val STATISTIC_URL =
-        "https://callbacks-api.staging.almightypush.com/api/$API_VERSION/"
+        "https://callbacks-api.production.almightypush.com/api/$API_VERSION/"
     private const val THREAD_ID = 10000
     private const val TIMEOUT = 120000
     private const val GET_TIMEOUT = 60000
